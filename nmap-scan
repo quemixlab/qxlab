@@ -1,0 +1,5 @@
+##KALI LINUX 
+
+##Open nmap and type following command
+
+nmap -T4 -F <IP-Address>
