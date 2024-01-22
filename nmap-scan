@@ -1,5 +1,18 @@
 ##KALI LINUX 
 
-##Open nmap and type following command
+##Quick Scan
+nmap -T4 -F <IP-Address/hostname>
 
-nmap -T4 -F <IP-Address>
+##Quick Scan plus
+nmap -sV -T4 -O -F --version-light <IP-Adress/hostname>
+
+##Intense Scan
+nmap -T4 -A -v <IP-Adress/hostname>
+
+##Slow comprehensive scan
+nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script "default or (discovery and safe)" <IP-Adress/hostname>
+
+
+
+##print test
+print("\033[91mHello, World!\033[0m")
