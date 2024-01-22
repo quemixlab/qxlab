@@ -1,15 +1,15 @@
 ##KALI LINUX 
 
 ##Quick Scan
-nmap -T4 -F <IP-Address/hostname>
+nmap -T4 -F -ON <Dateiname.txt> <IP-Address/hostname>
 
 ##Quick Scan plus
-nmap -sV -T4 -O -F --version-light <IP-Adress/hostname>
+nmap -sV -T4 -O -F -oN <Dateiname.txt> --version-light <IP-Adress/hostname>
 
 ##Intense Scan
-nmap -T4 -A -v <IP-Adress/hostname>
+nmap -T4 -A -v -oN <Dateiname.txt> <IP-Adress/hostname>
 
 ##Slow comprehensive scan
-nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script "default or (discovery and safe)" <IP-Adress/hostname>
+nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 -oN <Dateiname.txt> --script "default or (discovery and safe)" <IP-Adress/hostname>
 
 
