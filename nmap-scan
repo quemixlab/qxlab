@@ -13,6 +13,3 @@ nmap -T4 -A -v <IP-Adress/hostname>
 nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script "default or (discovery and safe)" <IP-Adress/hostname>
 
 
-
-##print test
-print("\033[91mHello, World!\033[0m")
