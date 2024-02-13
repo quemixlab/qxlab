@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsichtbare Zeile</title>
+</head>
+<body>
+    <p>Dies ist eine sichtbare Zeile.</p>
+    <p style="display: none;">Dies ist eine unsichtbare Zeile.</p>
+    <p>Dies ist eine weitere sichtbare Zeile.</p>
+</body>
+</html>
